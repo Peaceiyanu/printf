@@ -67,7 +67,7 @@ int print_non_printable(va_list types, char buffer[],
 {
 	int i = 0, offset = 0;
 	char *str = va_arg(types, char *);
-	
+
 	UNUSED(flags);
 	UNUSED(width);
 	UNUSED(precision);
@@ -88,7 +88,7 @@ int print_non_printable(va_list types, char buffer[],
 
 	buffer[i + offset] = '\0';
 
-	return (write(1, buffer, i + offset));#
+	return (write(1, buffer, i + offset));
 }
 
 /************************* PRINT REVERSE *************************/
